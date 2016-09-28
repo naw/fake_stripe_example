@@ -1,0 +1,10 @@
+<html>
+  <head>
+    <%= javascript_include_tag "#{STRIPE_JS_HOST}/v2/" %>
+  </head>
+  <body>
+    <script type="text/javascript">
+      document.write("Stripe is " + Stripe);
+    </script>
+  </body>
+</html>

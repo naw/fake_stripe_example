@@ -37,6 +37,14 @@ group :development, :test do
   gem 'byebug'
 end
 
+group :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'capybara-webkit'
+  gem 'fake_stripe', github: 'thoughtbot/fake_stripe', branch: 'master'
+  gem 'stripe'
+end
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
